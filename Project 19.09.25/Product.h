@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+
 using namespace std;
 class Product
 {
@@ -16,37 +17,20 @@ public:
 	void Init(string n, string cat, double pr, double we);
 	void Input(); 
 
+	void SetName(string n);
 
-	void SetName(string n) {
-		name = n;
-	}
+	string GetName();
 
-	string GetName() {
-		return name;
-	}
+	void SetCategory(string cat);
 
-	void SetCategory(string cat) {
-		category = cat;
-	}
+	string GetCategory();
 
-	string GetCategory() {
-		return category;
-	}
+	void SetPrice(double pr);
 
-	void SetPrice(double pr) {
-		price = pr;
-	}
+	double GetPrice();
 
-	double GetPrice() {
-		return price;
-	}
+	void SetWeight(double we);
 
-	void SetWeight(double we) {
-		weight = we;
-	}
-
-	double GetWeight() {
-		return weight;
-	}
+	double GetWeight();
 };
 

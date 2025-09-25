@@ -50,3 +50,33 @@ void Product::Input()
 	cin >> weight;
 
 }
+
+void Product::SetName(string n) {
+	name = n;
+}
+string Product::GetName() {
+	return name;
+}
+
+void Product::SetCategory(string cat) {
+	category = cat;
+}
+string Product::GetCategory() {
+	return category;
+}
+
+void Product::SetPrice(double pr) {
+	price = pr;
+}
+double Product::GetPrice() {
+	return price;
+}
+
+void Product::SetWeight(double we) {
+	weight = we;
+}
+
+double Product::GetWeight() {
+	return weight;
+}
+
